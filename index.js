@@ -5,10 +5,8 @@ const app = express();
 const { MongoClient } = require("mongodb");
 // Replace the uri string with your connection string.
 const uri =
-  "mongodb+srv://lehshak:nbuMKyq49HqqT4is@cluster0.7zhq4.mongodb.net";
+  "";
 const client = new MongoClient(uri);
-
-// mongoimport --uri "mongodb+srv://lehshak:nbuMKyq49HqqT4is@cluster0.7zhq4.mongodb.net" --collection games.game --file steam_games.json --jsonArray
 
 async function connectToDatabase() {
     try {
